@@ -1,0 +1,7 @@
+<p>homepage works!</p>
+
+<!-- <button (click)="getUsers()"></button> -->
+
+<div *ngFor="let user of userList | async">
+  <button>{{user.name}}</button>
+</div>
