@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from './homepage/homepage.component'
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { UserPostsModule } from './user-posts/user-posts.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    UserPostsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
