@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Observable } from 'rxjs'; 
+import { Posts } from '../interface/posts';
 import { User } from '../interface/user';
 import { UserService } from '../service/user.service';
 
@@ -12,9 +13,11 @@ import { UserService } from '../service/user.service';
 })
 export class UserDetailsComponent implements OnInit {
   user$!: Observable<User>;
+  post$!: Observable<Posts>
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private userService: UserService) { }
 
   ngOnInit(): void {
@@ -23,5 +26,9 @@ export class UserDetailsComponent implements OnInit {
     if(id !== null) {
       this.user$ = this.userService.getUserInfo(id);
     }
+  }
+
+  onSelect(posts: { id: any; }) {
+    this.router.navigate(['/user-posts', posts.id])
   }
 }

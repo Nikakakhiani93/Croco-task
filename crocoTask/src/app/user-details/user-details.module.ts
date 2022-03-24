@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomepageModule } from '../homepage/homepage.module';
 
 
 
@@ -8,7 +7,6 @@ import { HomepageModule } from '../homepage/homepage.module';
   declarations: [],
   imports: [
     CommonModule,
-    HomepageModule
   ]
 })
 export class UserDetailsModule { }
