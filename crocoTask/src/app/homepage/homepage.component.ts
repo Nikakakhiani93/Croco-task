@@ -9,7 +9,7 @@ import { User } from '../interface/user';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.sass']
+  styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
   constructor(

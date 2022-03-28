@@ -1,0 +1,43 @@
+
+:host {
+   .user-content {
+      display: grid;
+      width: 100%;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      :hover {
+         color: #fff;
+         box-shadow: inset 200px 0 0 0 #54b3d6;;
+      }
+   }
+   .user-buttons {
+         .column {
+            padding: 0 10px;
+         }
+         
+         .row {
+            gap: 10px;
+            margin: 0 -5px;
+         }
+      
+         .card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         padding: 16px;
+         text-align: center;
+         background-color: #f1f1f1;
+      
+         button {
+            border: none;
+         }
+      
+         button:hover { 
+            color: #000000 !important;
+            outline:none;
+            box-shadow: none;
+            color: unset;
+         }
+      }
+   }
+}
+
+

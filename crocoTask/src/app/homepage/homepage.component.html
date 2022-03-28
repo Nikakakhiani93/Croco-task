@@ -1,5 +1,11 @@
-<p>homepage works!</p>
 
-<div *ngFor="let user of userList$ | async">
-  <button (click)="onSelect(user)">{{user.name}}</button>
+<div class="fixed-sides user-content">
+  <div class="user-buttons" *ngFor="let user of userList$ | async">
+    <div class="row">
+      <div class="column">
+        <div class="card"  (click)="onSelect(user)">
+          <button>{{user.name}}</button>
+        </div>
+      </div>
+  </div>
 </div>
