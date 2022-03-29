@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from './homepage/homepage.component'
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserPostsModule } from './user-posts/user-posts.module';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { UserPostsModule } from './user-posts/user-posts.module';
     AppRoutingModule,
     HttpClientModule,
     UserPostsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
